@@ -11,7 +11,7 @@ export default function Home({ articles }) {
         {articles.length > 0 && articles.map((articles, index) => (
           <div key={index}>
             <h2 className={styles.h2}>{articles.title}</h2>
-            {/* <Image
+            <Image
             className={styles.image}
             src={`/api/imageproxy?url=${encodeURIComponent(articles.urlToImage)}`}
             alt={`image for the articles ${articles.title}`} 
@@ -19,16 +19,7 @@ export default function Home({ articles }) {
             height={'300px'}
             layout='responsive'
             property={index < 2}
-            /> */}
-            <img
-              className={styles.image}
-              src={`/api/imageproxy?url=${encodeURIComponent(articles.urlToImage)}`}
-              alt={`image for the articles ${articles.title}`}
-              width={'450px'}
-              height={'300px'}
-              layout='responsive'
-              property={index < 2} 
-              />
+            />
             <p>
               {articles.description} <Link href={articles.url}>seguir leyendo...</Link>
             </p>
