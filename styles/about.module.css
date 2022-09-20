@@ -1,0 +1,15 @@
+.container{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .link{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    display: flex;
+}
