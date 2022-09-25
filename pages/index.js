@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import PageLayout from '../components/PageLayout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home({ articles }) {
   return (
