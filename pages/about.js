@@ -15,7 +15,7 @@ export default function Home({ props }) {
                 className={styles.image}
                     src={`/api/imageproxy?url=${encodeURIComponent(props.avatar_url)}`}
                     alt={`image for the gitHub ${props.login}`}
-                    width={'400px'}
+                    width={'600px'}
                     height={'350px'}
                     layout='responsive'
                 />

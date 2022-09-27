@@ -2,7 +2,6 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import PageLayout from '../components/PageLayout'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Home({ articles }) {
   return (
@@ -11,12 +10,12 @@ export default function Home({ articles }) {
         {articles.length === 0 && <p>No tenemos articulos</p>}
         {articles.length > 0 && articles.map((articles, index) => (
           <div key={index}>
-            <h2 className={styles.h2}>{articles.title}</h2>
+            <h3 className={styles.h2}>{articles.title}</h3>
             <Image
             className={styles.image}
             src={`/api/imageproxy?url=${encodeURIComponent(articles.urlToImage)}`}
             alt={`image for the articles ${articles.title}`} 
-            width={'450px'}
+            width={'600px'}
             height={'300px'}
             layout='responsive'
             property={index < 2}
